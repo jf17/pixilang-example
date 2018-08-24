@@ -18,16 +18,16 @@ get_event()
 if( EVT[ EVT_TYPE ] == EVT_QUIT ) // выход
  { goto exit1 } 
 
-if (EVT[ EVT_KEY ] == KEY_UP ) // выход
+if (EVT[ EVT_KEY ] == KEY_UP ) // клавиша вверх
     {  прирост_по_У= -10 прирост_по_Х=0 }
 
-if (EVT[ EVT_KEY ] == KEY_DOWN ) // выход
+if (EVT[ EVT_KEY ] == KEY_DOWN ) // клавиша вниз
     {  прирост_по_У= 10 прирост_по_Х=0 }
 
-if (EVT[ EVT_KEY ] == KEY_LEFT ) // выход
+if (EVT[ EVT_KEY ] == KEY_LEFT ) // клавиша влево
     {  прирост_по_У= 0 прирост_по_Х=-10 }
 
-if (EVT[ EVT_KEY ] == KEY_RIGHT ) // выход
+if (EVT[ EVT_KEY ] == KEY_RIGHT ) // клавиша вправо
     {  прирост_по_У= 0 прирост_по_Х=10 }
 
     fbox( Х_координата_кубика, У_координата_кубика ,ширина_кубика,высота_кубика, #222222 ) // его тень 
